@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="240" viewBox="0 0 1200 240">
+  <defs>
+    <style>
+      /* Uses system fonts; swap to your brand font if needed */
+      .wordmark {
+        font-family: Inter, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+      }
+    </style>
+  </defs>
+  <!-- Background is transparent. Color is controlled via currentColor. -->
+  <g fill="none" stroke="none" color="#111827">
+    <text x="50" y="160" class="wordmark" font-size="140" fill="currentColor">meldrum labs</text>
+  </g>
+</svg>
