@@ -66,7 +66,7 @@ export default function Page() {
 
           <section className='max-w-6xl w-full mx-auto px-10 border-r border-l border-t border-iroh-gray-300 dark:border-iroh-gray-800 py-20'>
             <div className='w-full md:px-5'>
-              <h3 className='text-lg tracking-wider font-bold text-meldrum-green-600 dark:text-meldrum-green-400 uppercase'>From the Blog</h3>
+              <h3 className='text-lg tracking-wider font-bold text-meldrum-green-600 dark:text-meldrum-green-400 uppercase'>Blog Posts</h3>
             </div>
             <FromTheBlog />
           </section>

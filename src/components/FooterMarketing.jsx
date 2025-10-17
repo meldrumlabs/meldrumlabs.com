@@ -12,7 +12,7 @@ const navigation = {
   ],
   connect: [
     { name: 'Email', href: 'contact@meldrumlabs.com' },
-    { name: 'Twitter', href: 'https://twitter.com/meldrumlabs' },
+    { name: 'X', href: 'https://x.com/meldrumlabs' },
   ],
   social: [
         {
@@ -33,7 +33,7 @@ export function FooterMarketing() {
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
             <p className="text-sm leading-6 text-meldrum-green-400">
-              Quality Data Systems out of Sweden.
+              Data Systems out of Sweden.
             </p>
             <div className="flex space-x-6">
               {navigation.social.map((item) => (
@@ -78,7 +78,6 @@ export function FooterMarketing() {
         </div>
         <div className="mt-16 flex border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
           <p className="text-xs leading-5 text-meldrum-green-400 mr-auto">&copy; 2025 Meldrum Labs AB.</p>
-          <ThemeToggle />
         </div>
       </div>
     </footer>

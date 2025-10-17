@@ -11,7 +11,18 @@ import {Logotype} from '@/components/Logotype';
 import {Navigation} from '@/components/Navigation';
 import {SectionProvider} from '@/components/SectionProvider';
 
-export const navItems = [];
+
+export const navItems = [
+  {
+    title: 'Overview',
+    links: [
+      {title: 'Intro', href: '/about'},
+      {title: 'Principles', href: '/about/principles'},
+      {title: 'Services', href: '/about/services'},
+      {title: 'Contributions', href: '/about/contributions'},
+    ],
+  },
+];
 
 export default function DocsLayout({children, sections = {}}) {
   const pathname = usePathname();

@@ -81,8 +81,8 @@ export const HomeHero = function HomeHero({ className, style = {} }: { className
   }, [])
 
   const getNoise = useCallback((x: number, y: number, t: number) => {
-    // Scale down the coordinates and time for smoother transitions
-    const scale = 0.1
+    // Increased scale for faster noise transitions
+    const scale = 0.2 // Changed from 0.1 to 0.2 for faster effect
     return (noise3D(x * scale, y * scale, t * scale) + 1) / 2 // Normalize to 0-1
   }, [])
 
@@ -90,7 +90,7 @@ export const HomeHero = function HomeHero({ className, style = {} }: { className
     let animationFrameId: number
 
     const animate = () => {
-      setTime(t => t + 0.01) // Increment time slowly for smooth transitions
+      setTime(t => t + 0.02) // Increased from 0.01 to 0.03 for faster animation
       animationFrameId = requestAnimationFrame(animate)
     }
 
@@ -102,6 +102,24 @@ export const HomeHero = function HomeHero({ className, style = {} }: { className
       }
     }
   }, [])
+
+  // Calculate centering offsets
+  const calculateBackgroundPosition = useCallback((x: number, y: number) => {
+    // Calculate how much to offset to center the image
+    const totalGridWidth = GRID_COLUMNS * SQUARE_SIZE
+    const totalGridHeight = GRID_ROWS * SQUARE_SIZE
+    
+    // Center the image within the grid
+    const offsetX = (imageDimensions.width - totalGridWidth) / 2
+    const offsetY = (imageDimensions.height - totalGridHeight) / 2
+
+ 
+    
+    // Apply the offset to center the background
+    return `-${(x * SQUARE_SIZE) - offsetX}px -${(y * SQUARE_SIZE) - offsetY}px`
+  }, [imageDimensions])
+
+
 
   return (
     <div className={clsx(className, "flex flex-col pointer-events-none")} style={{height: GRID_HEIGHT, ...style}}>
@@ -125,17 +143,16 @@ export const HomeHero = function HomeHero({ className, style = {} }: { className
               style={{
                 height: SQUARE_SIZE,
                 width: SQUARE_SIZE,
-                // backgroundSize: `${imageDimensions.width}px ${imageDimensions.height}px`,
-                // borderColor: `rgba(255, 255, 255, ${noiseValue})`,
-                // backgroundColor: `rgba(147, 51, 234, ${noiseValue})`, // Purple color with varying opacity
-                // boxShadow: `0 0 ${noiseValue * 10}px ${noiseValue * 5}px rgba(147, 51, 234, ${noiseValue})`,
               }}
             >
-              <div className='w-full h-full' style={{
-                backgroundImage: `url(${SPRITE_SHEET_URL})`,
-                backgroundPosition: `-${x * SQUARE_SIZE}px -${y * SQUARE_SIZE}px`,
-                opacity,
-              }} />
+              <div 
+                className='w-full h-full' 
+                style={{
+                  backgroundImage: `url(${SPRITE_SHEET_URL})`,
+                  backgroundPosition: calculateBackgroundPosition(x, y),
+                  opacity,
+                }} 
+              />
             </div>
           )
         })}

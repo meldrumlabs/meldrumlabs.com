@@ -38,8 +38,8 @@ export function BlogPostLayout({ article, references = [], children }) {
                 {references.length > 0 && (
                   <References references={references} />
                 )}
-                <div className="text-base text-zinc-400 dark:text-meldrum-pink-100 italic">
-                  Meldrum Labs is a company based in Sweden that specializes in building reliable and innovative real-time data systems
+                <div className="text-base text-zinc-400 dark:text-iroh-gray-500 italic">
+                  Meldrum Labs is a company based in Sweden that specializes in building reliable and innovative data systems
                 </div>
               </Prose>
             </article>

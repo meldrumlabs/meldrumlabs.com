@@ -4,16 +4,16 @@ import { useState, useEffect, useRef } from "react"
 
 const useCases = {
   "Stream Processing": [
-    "Meldrum Labs brings experience from both award winning streaming research and building production-grade systems",
+    "Meldrum Labs combines award winning streaming research with hands-on experience in building production grade systems.",
   ],
   "Database Systems": [
-    "Meldrum Labs ..",
+    "Meldrum Labs designs and optimizes database internals: storage, indexing, and query performance for demanding workloads.",
   ],
   "Distributed Systems": [
-    "Meldrum Labs ..",
+    "Meldrum Labs architects systems that scale, tolerate failure, and perform under real-world conditions",
   ],
   "Rust": [
-    "Meldrum Labs has been building data-intensive systems in Rust since 2018 (Double check)",
+    "Meldrum Labs has been building reliable and innovative data-intensive systems in Rust since 2018",
   ],
 
 }

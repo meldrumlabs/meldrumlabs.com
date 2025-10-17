@@ -1,7 +1,7 @@
 module.exports = ({ theme }) => ({
   DEFAULT: {
     css: {
-      '--tw-prose-body': theme('colors.zinc.700'),
+      '--tw-prose-body': theme('colors.meldrumBlue.700'),
       '--tw-prose-headings': theme('colors.zinc.900'),
       '--tw-prose-links': theme('colors.irohPurple.500'),
       '--tw-prose-links-hover': theme('colors.irohPurple.600'),
@@ -19,12 +19,12 @@ module.exports = ({ theme }) => ({
       '--tw-prose-th-borders': theme('colors.zinc.300'),
       '--tw-prose-td-borders': theme('colors.zinc.200'),
 
-      '--tw-prose-invert-body': theme('colors.zinc.400'),
-      '--tw-prose-invert-headings': theme('colors.white'),
-      '--tw-prose-invert-links': theme('colors.irohPurple.400'),
-      '--tw-prose-invert-links-hover': theme('colors.irohPurple.500'),
-      '--tw-prose-invert-links-underline': theme('colors.irohPurple.500 / 0.3'),
-      '--tw-prose-invert-bold': theme('colors.white'),
+      '--tw-prose-invert-body': theme('colors.meldrumBlue.300'),
+      '--tw-prose-invert-headings': theme('colors.meldrumGreen.400'),
+      '--tw-prose-invert-links': theme('colors.meldrumPink.100'),
+      '--tw-prose-invert-links-hover': theme('colors.meldrumPink.500'),
+      '--tw-prose-invert-links-underline': theme('colors.meldrumPink.500 / 0.3'),
+      '--tw-prose-invert-bold': theme('colors.meldrumOrange.400'),
       '--tw-prose-invert-counters': theme('colors.zinc.400'),
       '--tw-prose-invert-bullets': theme('colors.zinc.600'),
       '--tw-prose-invert-hr': theme('colors.white / 0.05'),
