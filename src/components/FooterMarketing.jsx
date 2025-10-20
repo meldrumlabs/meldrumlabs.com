@@ -7,7 +7,6 @@ import { BlueskyIcon, DiscordIcon, GitHubIcon, MastodonIcon, TwitterIcon, YouTub
 
 const navigation = {
   learn: [
-    { name: 'About', href: '/about' },
     { name: 'Blog', href: '/blog' },
   ],
   connect: [

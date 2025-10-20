@@ -14,10 +14,10 @@ export const metadata = {
     title: 'meldrum labs',
     description: 'Reliable Data Systems',
     images: [{
-      url: '/api/og?title=iroh&subtitle=less net work for networks',
+      url: '/api/og?title=meldrum&subtitle=reliable and innovative data systems',
       width: 1200,
       height: 630,
-      alt: 'iroh. less net work for networks',
+      alt: 'Reliable and Innovative Data Systems',
       type: 'image/png',
     }],
     type: 'website'

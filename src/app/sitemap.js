@@ -12,7 +12,7 @@ export default async function sitemap() {
   const pages = await getAllPages();
 
   return pages.map(page => ({
-    url: `https://iroh.computer/${page.slug}`,
+    url: `https://meldrumlabs.com/${page.slug}`,
     lastModified: page.date,
     changeFrequency: 'monthly',
     priority: priorities[page.slug] || 0.6,

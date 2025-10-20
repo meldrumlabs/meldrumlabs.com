@@ -12,7 +12,7 @@ const GRID_ROWS = GRID_HEIGHT / SQUARE_SIZE
 const TOTAL_SQUARES = GRID_COLUMNS * GRID_ROWS
 
 // This is a placeholder image URL. Replace with your actual sprite sheet URL
-const SPRITE_SHEET_URL = '/img/kv/iroh_kv_1_1200.png'
+const SPRITE_SHEET_URL = '/img/kv/meldrum_kv_1_1200.png'
 
 const noise3D = createNoise3D(() => 0.4)
 

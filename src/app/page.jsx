@@ -48,7 +48,7 @@ export default function Page() {
                   <h3 className="text-meldrum-orange-400 mt-3 leading-normal">Meldrum Labs builds specialized data systems that require both reliability and innovation.</h3>
                   <div className='flex mt-3'>
                     <a 
-                      href="/about" 
+                      href="/blog/announcement" 
                       className="my-4 p-3 px-4 transition border-2 border-meldrum-green-600 text-meldrum-green-600 uppercase hover:bg-meldrum-green-600 hover:text-white dark:border-meldrum-green-400 dark:text-meldrum-green-400 dark:hover:bg-meldrum-green-400 dark:hover:text-gray-900 plausible-event-name=Home+Hero+Start+Project+Click"
                     >
                       Learn more

@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react"
 
 const useCases = {
   "Stream Processing": [
-    "Meldrum Labs combines award winning streaming research with hands-on experience in building production grade systems.",
+    "Meldrum Labs combines award-winning streaming research with hands on experience building production grade stream processing systems.",
   ],
   "Database Systems": [
     "Meldrum Labs designs and optimizes database internals: storage, indexing, and query performance for demanding workloads.",
