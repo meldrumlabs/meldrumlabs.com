@@ -15,7 +15,6 @@ import {createAutocomplete} from '@algolia/autocomplete-core';
 import {Dialog, Transition} from '@headlessui/react';
 import clsx from 'clsx';
 
-import {navItems as aboutNavItems} from '@/app/about/layout';
 
 function useAutocomplete({close}) {
   const id = useId();
@@ -141,7 +140,7 @@ function SearchResult({
   query,
 }) {
   const id = useId();
-  const navigation = [...aboutNavItems];
+  const navigation = [];
 
   const sectionTitle = navigation.find((section) =>
     section.links.find((link) => link.href === result.url.split('#')[0]),

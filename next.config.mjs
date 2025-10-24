@@ -22,6 +22,8 @@ const redirects = async () => {
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
+  output: 'export', // Explicitly set for static export
+  images: { unoptimized: true },
   redirects,
 }
 
