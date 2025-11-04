@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react"
 
 // each of these has a png at /img/user-logos/${COMPANY}.png
 const companies = [
-  "polygon",
+  "massive",
 ];
 
 export function LogoCloud({ speed = 0.25, height = 150 }) {
