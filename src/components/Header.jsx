@@ -16,6 +16,7 @@ import {MobileSearch, Search} from '@/components/Search';
 import {ThemeToggle} from '@/components/ThemeToggle';
 
 export const navItems = [
+  {content: 'Team', href: '/team'},
   {content: 'Blog', href: '/blog'},
 ];
 
